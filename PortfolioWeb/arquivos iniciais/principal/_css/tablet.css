@@ -1,0 +1,229 @@
+* {
+    font-family: 'Inconsolata', sans-serif;
+    color: aliceblue;
+    cursor: default;
+}
+body {
+    margin: 0;
+}
+.janela {
+    height: 100vh;
+    width: 100%;
+}
+
+#inicio{
+    background-image: url(/arquivos\ iniciais/img/background/1.png);
+    background-size: cover;
+    padding: 100px;
+}
+
+#sobre-mim{
+    background-image: url(/arquivos\ iniciais/img/background/2.png);
+    background-size: cover;
+    padding: 100px;
+}
+
+#experiencias{
+    background-image: url(/arquivos\ iniciais/img/background/3.png);
+    background-size: cover;
+    padding: 100px;
+}
+
+#projetos{
+    background-image: url(/arquivos\ iniciais/img/background/4.png);
+    background-size: cover;
+    padding: 100px;
+}
+
+#contatos {
+    background-image: url(/arquivos\ iniciais/img/background/5.png);
+    background-size: cover;
+    padding: 100px;
+}
+
+
+
+/* INICIO */
+
+.portfolio{
+    position: relative;
+    display: flex;
+    float: inline-start;
+    justify-content: space-around;
+    left: -2%;
+    width: 100%;
+    font-size: 2em;
+}
+
+.titulo{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 2em;
+}
+
+.subtitulo{
+    position: relative;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.port{
+    transition: all 0.3s ease-out;
+}
+.port:hover{
+    transform: scale(1.6);
+}
+
+
+/* SOBRE MIM */
+#textoS{
+    margin-top: -80px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#vida{
+    width: 40%;
+    left: 30%;
+}
+
+span{
+    cursor: pointer;
+}
+
+/* EXPERIÊNCIAS */
+#textoE{
+    top: -10%;
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+
+}
+
+#galeria-P{
+    top: -25px;
+    position: relative;
+    left: 35%;
+    width: 30%;
+}
+
+/* PROJETOS */
+
+#galeria-projetos{
+    top: 20%;
+}
+
+.proj{
+    font-size: 1.2em;
+}
+
+.projd{
+    font-size: .8em;
+}
+
+/* CONTATOS */
+#contato {
+    top: 20%;
+}
+
+/* NAVEGAÇÃO */
+.navegacao{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    margin-left: -13%;
+    top: 725px;
+    z-index: 1;
+}
+
+.op {
+    font-size: 1.6em;
+}
+
+
+#in{
+    position: absolute;
+    left: 45%;
+    top: -80%;
+    font-size: 1.5em;
+    padding: 6px 18px 6px 18px;
+    background-color: none;
+    border-radius: 60%;
+}
+
+#setacima{
+    position: absolute;
+    left: 50%;
+}
+
+#setacima:hover{
+    color: #4e4e49;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#sm::after{
+    content: " ";
+    width: 10%;
+    height: 4px;
+    background-color: none;
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+#sm:hover::after{
+    background-color: aliceblue;
+    width: 25%;
+}
+
+#xp::after{
+    content: " ";
+    width: 25%;
+    height: 4px;
+    background-color: none;
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+#xp:hover::after{
+    background-color: aliceblue;
+    width: 50%;
+}
+
+#pr::after{
+    content: " ";
+    width: 50%;
+    height: 4px;
+    background-color: none;
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+#pr:hover::after{
+    background-color: aliceblue;
+    width: 70%;
+}
+
+#ctt::after{
+    content: " ";
+    width: 70%;
+    height: 4px;
+    background-color: none;
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+#ctt:hover::after{
+    background-color: aliceblue;
+    width: 103%;
+}
